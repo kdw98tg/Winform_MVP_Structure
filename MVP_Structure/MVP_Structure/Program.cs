@@ -1,6 +1,4 @@
-using MVP_Structure.Presenter;
 using MVP_Structure.Presenter.MainForm;
-using MVP_Structure.View.MainFormView;
 
 namespace MVP_Structure
 {

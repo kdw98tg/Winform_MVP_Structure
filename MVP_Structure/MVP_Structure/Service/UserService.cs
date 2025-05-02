@@ -33,7 +33,7 @@ namespace MVP_Structure.Service
             }
             if (string.IsNullOrEmpty(_newUser.UserName))
             {
-                throw new UserNameException("이름을 넣어주세요.");
+                throw new UserNameInvalidException("이름을 넣어주세요.");
             }
         }
 

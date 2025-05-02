@@ -37,11 +37,11 @@ namespace MVP_Structure.Presenter.MainForm
             }
             catch (UserAgeException _userAgeException)
             {
-                MessageBox.Show("나이 잘못됨");
+                mainView.ShowMessageBox("나이 잘못됨");
             }
-            catch (UserNameException _userNameException)
+            catch (UserNameInvalidException _userNameException)
             {
-                MessageBox.Show("이름 잘못됨");
+                mainView.ShowMessageBox("이름 잘못됨" + _userNameException.Message, _userNameException.InnerException.ToString());
             }
         }
     }
